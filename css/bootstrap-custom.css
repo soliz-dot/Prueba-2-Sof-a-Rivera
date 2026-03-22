@@ -1,25 +1,27 @@
 a{
-	outline:0 !important;	
+	outline:0 !important;
+	color: var(--color-naranja);
 }
 .navbar-light {
-	background-color:transparent !important;
-	font-size:16px;	
-	
+	background-color:transparent!important;
+	font-size:14px;
+	text-transform: uppercase;
 }
 .navbar-light .navbar-nav .nav-link{
-	color:var(--color-negro);	
-	font-weight:600;
+	color:#fff;	
+	font-weight: 700;
+	padding: 5px 17px;
 }
 .navbar-light .navbar-nav .nav-link:hover{
-	color:var(--menu-hover);
+	color:var(--color-menu-hover);;
 }
-.navbar-light .navbar-nav .active .nav-link{
+.navbar-light .navbar-nav .active.nav-link{
 	background-color:transparent;
-	color:var(--menu-hover);
+	color:var(--color-menu-hover);
 }
-.navbar-light .navbar-nav .active .nav-link:hover{
+.navbar-light .navbar-nav .active.nav-link:hover{
 	background-color:transparent;
-	color:var(--menu-hover);
+	color:var(--color-menu-hover);
 }
 
 
@@ -69,41 +71,40 @@ a{
 	cursor:pointer;
 }
 .navbar-light .navbar-brand {
-	color:#363636;		
+	color:#4676fa;		
 	height: auto;
+	text-transform: uppercase;
 }
 .navbar-light .navbar-brand:hover {
- 	color:#1F81BF;
+ 	color:#4676fa;
 }
 .navbar-light .navbar-brand img{
-	width: 80px;
+	
+}
+
+
+.navbar-toggler i{
+	color: #00d9d9;
+	font-size: 20px;
 }
 
 
 
 .carousel-caption{
-	top:50%;
-	left: 50%;
-	bottom: inherit;
-	transform: translate(-50%,-50%);
-	width: 60%;
-}
-.caption-center{
-	/*display: table-cell;
-	vertical-align: middle;*/
+	display: grid !important;
+	align-content: center;
+	height: 100%;
 }
 .carousel-item{
-	height: 100vh; /*opcional: en caso de no utilizar una imagen de fondo por slide*/
+	/*height: 100vh; opcional: en caso de no utilizar una imagen de fondo por slide*/
 }
 
 
 
 /*Altura definida para el Carousel manteniendo el aspecto de la imagen*/
-
 .carousel .carousel-item {
-  height: 500px;
+  	height: 500px;
 }
-
 .carousel-item img {
     position: absolute;
     object-fit:cover;
@@ -111,6 +112,7 @@ a{
     left: 0;
     min-height: 500px;
 }
+
 
 
 
